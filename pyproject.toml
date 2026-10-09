@@ -1,0 +1,16 @@
+[project]
+name = "tv-mcp"
+version = "0.1.0"
+description = "MCP server to see and control an Android / Google TV over ADB"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=2.3.0",
+    "pillow>=12.3.0",
+]
+
+[project.scripts]
+tv-mcp = "tv_mcp:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
