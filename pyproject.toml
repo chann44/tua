@@ -8,8 +8,15 @@ dependencies = [
     "pillow>=12.3.0",
 ]
 
+[project.optional-dependencies]
+harness = [
+    "anthropic>=0.42.0",
+    "openai>=1.60.0",
+]
+
 [project.scripts]
 tv-mcp = "tv_mcp:main"
+tua = "tua.harness.cli:main"
 
 [build-system]
 requires = ["hatchling"]

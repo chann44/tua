@@ -1,2 +1,4 @@
 tests/shot_*.jpg
 .venv/
+__pycache__/
+runs/
